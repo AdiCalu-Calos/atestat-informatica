@@ -1,0 +1,11 @@
+1. Prima pagina
+-html: 
+navigare: acasa
+	  inventia
+	  telefoane fixe
+	  telefoane mobile
+	  smartphoneuri		
+-css
+culoare fundal
+fonturi
+visual
