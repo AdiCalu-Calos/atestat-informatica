@@ -324,3 +324,46 @@ table.compare tbody tr:hover{
 @media (max-width: 420px){
   nav a{ flex:1 1 100%; }
 }
+
+
+/* ===== Fix pentru linkuri lungi ===== */
+.content a{
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.content ul li a{
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.content ul li a:hover{
+  text-decoration: underline;
+}
+
+
+.sources a{
+  position: relative;
+}
+
+.sources a::after{
+  content: attr(href);
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  font-size: 12px;
+  background: #000;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sources a:hover::after{
+  opacity: 1;
+}
